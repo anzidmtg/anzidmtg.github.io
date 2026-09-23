@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>anzidbot</title>
+<meta name="description" content="A chat bot for the anzidmtg tournament broadcasts on Twitch and YouTube.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <h1>anzidbot</h1>
+    <p class="sub">A chat bot for the <strong>anzidmtg</strong> trading card game tournament broadcasts.</p>
+
+    <p>anzidbot runs alongside the live production software for anzidmtg's Riftbound and Magic: The Gathering
+    tournament streams. It reads the stream's public live chat, and lets viewers put things on screen and ask
+    what is being played.</p>
+
+    <h2>What it does</h2>
+    <ul>
+        <li><code>!card &lt;name&gt;</code> or <code>[[name]]</code> — shows that trading card on the broadcast for a few seconds.</li>
+        <li><code>!decklists</code> — replies with the match currently on stream and where to find the players' decklists.</li>
+        <li>A small number of operator-only commands, used by the channel owner to load decklists onto the scoreboard.</li>
+    </ul>
+
+    <h2>Where it runs</h2>
+    <p>On the broadcast machine operated by the channel owner, for that channel's own streams. It is not a
+    service other people sign up for, and it has no accounts, logins or user-facing website beyond this page.</p>
+
+    <h2>Why it needs access to YouTube</h2>
+    <p>To read the live chat of the channel's own broadcasts, and to post replies in that chat as the bot
+    account. It does not read, upload, edit or delete videos, and it does not touch any channel other than the
+    one it is streaming for.</p>
+
+    <nav>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="terms.html">Terms of service</a>
+    </nav>
+    <footer>Operated by the anzidmtg channel.</footer>
+</main>
+</body>
+</html>
